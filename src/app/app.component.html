@@ -1,3 +1,5 @@
 <h1>
   {{title}}
 </h1>
+<input class="login-name" placeholder="Login name" autofocus="" [(ngModel)]="login.name" (keyup.enter)="login()">
+<input class="login-psw" placeholder="Password" autofocus="" [(ngModel)]="login.password" (keyup.enter)="login()">
