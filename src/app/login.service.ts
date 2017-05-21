@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
 export class LoginService {
 
   constructor() { }
-  login(){
-    console.log("login exec!");
-	  alert('6uttuihg');
+  login():boolean{
+    console.log("login successed!");
+    return true;
   }
 }
