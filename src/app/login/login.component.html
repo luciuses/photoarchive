@@ -1,5 +1,6 @@
 <p>
-{{t}}
+{{title}}
 </p> 
-<input class="login-name" placeholder="Login name" autofocus="" [(ngModel)]="login.name" (keyup.enter)="login()">
-<input class="login-psw" placeholder="Password" autofocus="" [(ngModel)]="login.password" (keyup.enter)="login()">
+<input class="login-name" placeholder="Login name" autofocus="" [(ngModel)]="name" (keyup.enter)="login()">
+<input class="login-psw" placeholder="Password" autofocus="" [(ngModel)]="password" (keyup.enter)="login()">
+<input class="login-submit" type="button" (click)="login()" value="button" >

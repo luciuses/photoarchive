@@ -8,15 +8,17 @@ import {LoginService} from './../login.service';
   providers: [LoginService]
 })
 export class LoginComponent implements OnInit {
-t = 't';
+title = 'Please enter yor credentials:';
+name = 'noname';
+password = '';
 constructor(private loginService: LoginService) {
 }
 
   login() {
     if(this.loginService.login()){
-      this.t = 'Login: ok!';
+      this.title = 'Hello '+this.name+"!";
     }else{
-      this.t = 'Login: failed!';
+      this.title = 'Login is failed, please try again!';
     };
   }
 
